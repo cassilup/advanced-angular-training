@@ -15,12 +15,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/login',
+    redirectTo: '/homepage',
     pathMatch: 'full'
   },
   {
     path: '**',
-    redirectTo: '/login'
+    redirectTo: '/homepage'
   },
 ];
 
