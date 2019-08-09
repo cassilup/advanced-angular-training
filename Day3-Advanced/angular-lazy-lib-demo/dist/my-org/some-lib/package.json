@@ -1,0 +1,21 @@
+{
+  "name": "@my-org/some-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/my-org-some-lib.umd.js",
+  "module": "fesm5/my-org-some-lib.js",
+  "es2015": "fesm2015/my-org-some-lib.js",
+  "esm5": "esm5/my-org-some-lib.js",
+  "esm2015": "esm2015/my-org-some-lib.js",
+  "fesm5": "fesm5/my-org-some-lib.js",
+  "fesm2015": "fesm2015/my-org-some-lib.js",
+  "typings": "my-org-some-lib.d.ts",
+  "metadata": "my-org-some-lib.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

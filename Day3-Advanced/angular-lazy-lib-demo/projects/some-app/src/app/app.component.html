@@ -1,0 +1,32 @@
+<h3>How to lazy load modules from Angular libraries</h3>
+
+<nav>
+  <button routerLink="home" class="mdl-button mdl-button--raised mdl-button--colored">Home</button>
+  <button routerLink="lib" class="mdl-button mdl-button--raised mdl-button--colored">✅ Lib</button>
+</nav>
+
+<div class="wrapper">
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+
+  <section>
+    <h5>✅ Local wrapper module solution</h5>
+    <p>
+      "Lib" uses standard lazy loading import string <code>'./lazy/some-lib-wrapper.module'</code>
+      and will work in both dev and prod builds. The only downside is the necessity to create wrapper module <code>SomeLibWrapperModule</code>.
+    </p>
+
+    <h5>🌿 Future with Angular Ivy</h5>
+    <p>
+      This should change with Angular 9 (with Ivy enabled) where it should work by default and remove
+      the necessity for creation of local wrapper modules like <code>SomeLibWrapperModule</code> to make
+      lazy-loading of the libraries possible!
+    </p>
+  </section>
+
+</div>
+
+[<a href="https://github.com/tomastrajan/angular-lazy-lib-demo">Source</a>]
+
